@@ -8,6 +8,87 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     <style>
+
+        
+        /* Cấu hình nền trang web */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+
+        /* Khung chính của trang (Card) */
+        .container { 
+            width: 90%; 
+            max-width: 400px; 
+            background: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(10px); 
+            border-radius: 20px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+            overflow: hidden; 
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* Ảnh đại diện cơ quan ở trên đầu */
+        .header-image {
+            width: 100%;
+            height: 180px;
+            background-image: url('https://scontent.fsgn5-6.fna.fbcdn.net/v/t39.30808-6/653002960_1759431588729568_5796804692341084757_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2a1932&_nc_ohc=wr7_EQQsJmYQ7kNvwFZmrw7&_nc_oc=AdmAv0hCvVjzYllva0ZKwTWkap7aH2YKPYzcMG0360c9Kfej8_lOhu0Ijn1Xw3GVyrw&_nc_zt=23&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=BpfnRbonUNxptvjSyeoMXA&_nc_ss=8&oh=00_AfwV6U7lTqqy99f3z2xzxkqwsGXf0MjHlbGoyt5m_hElTQ&oe=69BD824D'); /* <--- THAY LINK ẢNH CƠ QUAN TẠI ĐÂY */
+            background-size: cover;
+            background-position: center;
+            border-bottom: 4px solid #007bff;
+        }
+
+        .content { padding: 25px; }
+
+        h1 { color: #2c3e50; font-size: 22px; margin: 15px 0 5px 0; font-weight: bold; }
+        p { color: #7f8c8d; font-size: 14px; margin-bottom: 25px; }
+
+        /* Hiệu ứng cho các nút bấm */
+        .link-btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start; 
+            background: #ffffff; 
+            color: #333; 
+            text-decoration: none; 
+            padding: 15px 20px; 
+            margin: 12px 0; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            border: 1px solid #eee;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Icon trong nút */
+        .link-btn i { font-size: 20px; width: 35px; text-align: left; }
+
+        /* Màu sắc riêng cho từng loại nút khi di chuột vào */
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .web:hover { background: #007bff; border-color: #007bff; }
+        .facebook:hover { background: #1877f2; border-color: #1877f2; }
+        .youtube:hover { background: #ff0000; border-color: #ff0000; }
+
+        /* Hiệu ứng hiện hình từ từ */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .footer { font-size: 11px; color: #bdc3c7; padding-bottom: 20px; }
+
+
+        /* đoạn code dưới đây đã chạy ổn */
         body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
         .container { width: 90%; max-width: 400px; text-align: center; }
         h1 { color: #333; font-size: 24px; margin-bottom: 20px; }
