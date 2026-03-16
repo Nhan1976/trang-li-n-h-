@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     
     <style>
-        /* CHỈ GIỮ LẠI ĐOẠN CODE HIỆN ĐẠI NÀY */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); 
@@ -31,20 +30,20 @@
             animation: fadeIn 0.8s ease-in-out;
         }
 
+        /* Khung hiển thị ảnh */
         .header-image {
             width: 100%;
             height: 180px;
-            /* Đảm bảo file coquan.jpg đã upload lên GitHub */
             background-image: url('coquan.jpg'); 
             background-size: cover;
             background-position: center;
             border-bottom: 4px solid #007bff;
-            background-color: #ddd; /* Hiện màu xám nếu chưa load được ảnh */
+            background-color: #ddd; 
         }
 
         .content { padding: 25px; }
 
-        h1 { color: #2c3e50; font-size: 22px; margin: 15px 0 5px 0; font-weight: bold; }
+        h1 { color: #2c3e50; font-size: 19px; margin: 15px 0 5px 0; font-weight: bold; line-height: 1.4; }
         p { color: #7f8c8d; font-size: 14px; margin-bottom: 25px; }
 
         .link-btn { 
@@ -70,7 +69,7 @@
             color: white !important;
         }
 
-        /* Hiệu ứng màu riêng khi hover */
+        /* Các class bổ sung để đổi màu nền khi hover */
         .web:hover { background: #007bff; border-color: #007bff; }
         .facebook:hover { background: #1877f2; border-color: #1877f2; }
         .youtube:hover { background: #ff0000; border-color: #ff0000; }
@@ -85,17 +84,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Báo và Phát thanh - Truyền hình An giang</h1>
-        <a href="https://angiangtv.vn" class="link-btn">🌐 Website Chính Thức</a>
-        
-        <a href="https://facebook.com/truyenhinhangiang" class="link-btn facebook">
-            <i class="fa-brands fa-facebook"></i>Fanpage Facebook Truyền hình An Giang
-        </a>
-        <a href="https://www.facebook.com/angiang24gio" class="link-btn facebook">
-            <i class="fa-brands fa-facebook"></i>Fanpage Facebook An Giang24H
-        </a>
-        <a href="https://www.youtube.com/@ATVT%E1%BB%95ngH%E1%BB%A3pAG" class="link-btn youtube">🎬 Kênh Youtube Tổng hợp</a>
-        <a href="https://www.youtube.com/@angiang24gio" class="link-btn youtube">🎬 Kênh Youtube 24H</a>
+        <div class="header-image"></div>
+
+        <div class="content">
+            <h1>Báo và Phát thanh - Truyền hình An Giang</h1>
+            <p>Cổng thông tin điện tử chính thức</p>
+
+            <a href="https://angiangtv.vn" class="link-btn web">
+                <i class="fas fa-globe" style="color: #007bff;"></i> Website Chính Thức
+            </a>
+            
+            <a href="https://facebook.com/truyenhinhangiang" class="link-btn facebook">
+                <i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Fanpage Truyền hình An Giang
+            </a>
+
+            <a href="https://www.facebook.com/angiang24gio" class="link-btn facebook">
+                <i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Fanpage An Giang 24H
+            </a>
+
+            <a href="https://www.youtube.com/@ATVT%E1%BB%95ngH%E1%BB%A3pAG" class="link-btn youtube">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Kênh Youtube Tổng hợp
+            </a>
+
+            <a href="https://www.youtube.com/@angiang24gio" class="link-btn youtube">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Kênh Youtube 24H
+            </a>
+        </div>
+        <div class="footer">© 2026 Đài PT-TH An Giang</div>
     </div>
 </body>
 </html>
