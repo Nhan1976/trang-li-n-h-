@@ -69,12 +69,26 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             color: white !important;
+       
         }
 
+        /* Hiệu ứng khi chạm ngón tay vào (Dành cho điện thoại) */
+        .link-btn:active {
+            transform: scale(0.95); /* Nút thu nhỏ lại một chút như bị nhấn thật */
+            transition: 0.1s;       /* Phản hồi cực nhanh */
+        }
+        
         /* Các class bổ sung để đổi màu nền khi hover */
-        .web:hover { background: #007bff; border-color: #007bff; }
+        /* .web:hover { background: #007bff; border-color: #007bff; }
         .facebook:hover { background: #1877f2; border-color: #1877f2; }
-        .youtube:hover { background: #ff0000; border-color: #ff0000; }
+        .youtube:hover { background: #ff0000; border-color: #ff0000; } */
+
+        /* Khi di chuột HOẶC khi chạm tay vào */
+        .web:hover, .web:active { background: #007bff; border-color: #007bff; color: white !important; }
+        
+        .facebook:hover, .facebook:active { background: #1877f2; border-color: #1877f2; color: white !important; }
+        
+        .youtube:hover, .youtube:active { background: #ff0000; border-color: #ff0000; color: white !important; }
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -115,8 +129,8 @@
         <!-- <div class="footer">Đài PT-TH An Giang</div>
         <div class="footer">©Copyright by Kỹ Thuật Công Nghệ</div> -->
         <div class="footer">
-            Báo và PT-TH An Giang <br> 
-            ©Copyright by Kỹ Thuật Công Nghệ
+            Đài PT-TH An Giang <br> 
+            <b>©Copyright by Kỹ Thuật Công Nghệ</b>
         </div>
     </div>
 </body>
