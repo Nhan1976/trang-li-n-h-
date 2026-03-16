@@ -33,10 +33,12 @@
         /* Khung hiển thị ảnh */
         .header-image {
             width: 100%;
-            height: 180px;
+            /* height: 180px; */
+            height: auto;           /* Thay 180px bằng auto */
+            aspect-ratio: 16 / 9;   /* Hoặc tỉ lệ ảnh của bạn, ví dụ 2 / 1 hoặc 3 / 1 */
             background-image: url('coquan.jpg'); 
-            /* background-size: cover; */
-            background-size: contain;      /* Thay 'cover' bằng 'contain' */
+            background-size: cover; 
+            /* background-size: contain;      /* Thay 'cover' bằng 'contain' */ */
             background-repeat: no-repeat;  /* Thêm dòng này để ảnh không bị lặp lại */
             background-position: center;
             border-bottom: 4px solid #007bff;
