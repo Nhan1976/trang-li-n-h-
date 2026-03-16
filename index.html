@@ -35,10 +35,12 @@
             width: 100%;
             height: 180px;
             background-image: url('coquan.jpg'); 
-            background-size: cover;
+            /* background-size: cover; */
+            background-size: contain;      /* Thay 'cover' bằng 'contain' */
+            background-repeat: no-repeat;  /* Thêm dòng này để ảnh không bị lặp lại */
             background-position: center;
             border-bottom: 4px solid #007bff;
-            background-color: #ddd; 
+            background-color: ##ffffff; 
         }
 
         .content { padding: 25px; }
